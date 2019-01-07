@@ -1,3 +1,5 @@
+* Behavior_net *
+
 All the file in this repository has been taken from [https://github.com/harvitronix/five-video-classification-methods] with slight modifications.  
 
 Model used : Extract features from each frame with a ConvNet, passing the sequence to an RNN, in a separate network
