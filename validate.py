@@ -35,7 +35,7 @@ def validate(data_type, model, seq_length=125, saved_model=None,
     # Evaluate!
     prediction = rm.model.predict_generator(
         generator=val_generator,
-        val_samples=29) #put the value as the number of test files 
+        val_samples=2) #put the value as the number of test files 
     prediction = prediction.tolist()
     print(prediction)
     print("===========================")
