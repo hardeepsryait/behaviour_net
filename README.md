@@ -1,4 +1,4 @@
-*** Behavior_net ***
+# Behavior_net 
 
 All the file in this repository has been taken from [https://github.com/harvitronix/five-video-classification-methods] with slight modifications.  
 
@@ -8,11 +8,17 @@ Model used : Extract features from each frame with a ConvNet, passing the sequen
 
 See the accompanying blog post for full details: https://blog.coast.ai/five-video-classification-methods-implemented-in-keras-and-tensorflow-99cad29cc0b5 
 
-Requirements
+## Requirements
 
-: Please see the `requirements.txt` file. 
+- tensorflow ???
+- Keras>=2.0.2
+- numpy>=1.12.1
+- pandas>=0.19.2
+- tqdm>=4.11.2
+- matplotlib>=2.0.0
 
-Steps to follow:
+
+## Steps to follow:
 
 1. Download the dataset in '/test/Reach' and '/train/Reach' folder respectively.
 
