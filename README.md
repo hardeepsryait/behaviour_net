@@ -20,23 +20,17 @@ You can install all the modules using 'pip install <module>'
 
 ## Steps to follow:
 
-1. Download the datasets in '/test/Reach' and '/train/Reach' folder respectively into a data folder. 
-	In this data folder, put the `data_file` CSV file. This file will reference all the files (format must be kept same).
+1. Download the datasets in '/test/Reach/' and '/train/Reach/' folder respectively into a data folder. 
+	In this data folder, put the `data_file.csv` file. This file will reference all the files (format must be kept same).
 	
-	NOTE: chaneg the csv in the repo
+2. To extract the features from the images using the CNN, run `extract_features.py`. 
+	These features will get stored in folder '/data/sequences/'.
 
-2. To extract the features from the images using the CNN, run "extract_features.py". 
-	These features will get stored in folder '/data/sequences'.
+3. Train the RNN model with `train_reg.py`. You can change the training options (e.g. model) by editting this file.
 
-3. Train the RNN model with 
-```
- train_reg.py
-```
- There are configuration options you can set in that file to choose which model you want to run.
+The models are defined in `models.py`. The trained model will get stored in folder '/data/checkpoints/'
 
-The models are all defined in `models.py`. The trained model will get stored in folder '/data/checkpoints'
-
-4. To validate the trained model, run "validate.py" on the test set.
+4. To validate the trained model, run "validate.py" on the test set. You can edit this file to validate different trained models.
 
 
 ## Disclaimer
