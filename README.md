@@ -20,8 +20,8 @@ You can install all the modules using `pip install <module>`.
 
 ## Steps to follow:
 
-1. Download the datasets in '/test/Reach/' and '/train/Reach/' folder respectively into a data folder. 
-	In this data folder, put the `data_file.csv` file. This file will reference all the files (format must be kept same).
+1. Download the datasets in '/test/Reach/' and '/train/Reach/' folder respectively into a data folder in your local directory. 
+	Put the `data_file.csv` file in the data folder. This file will reference all the files (format must be kept same).
 	
 2. To extract the features from the images using the CNN, run `extract_features.py`. 
 	These features will get stored in folder '/data/sequences/'.
