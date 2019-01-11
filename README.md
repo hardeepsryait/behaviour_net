@@ -30,7 +30,7 @@ You can install all the modules using 'pip install <module>'
 
 The models are defined in `models.py`. The trained model will get stored in folder '/data/checkpoints/'
 
-4. To validate the trained model, run "validate.py" on the test set. You can edit this file to validate different trained models.
+4. To validate the trained model, run `validate.py` on the test set. You can edit this file to validate different trained models.
 
 
 ## Disclaimer
