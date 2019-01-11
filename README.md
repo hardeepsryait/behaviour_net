@@ -7,7 +7,7 @@ Extracts features from each frame with a ConvNet, passing the sequence to an RNN
 This code has been used to produce the results in the preprint: [Ryait et al, 2019](https://www.biorxiv.org/)
 
 ## Requirements
-The code was developed for python 3.5 (tested on Linux and Windows)
+The code was developed for python 3.5 (tested on Linux and Windows) with the following modules:
 
 - tensorflow ???
 - Keras>=2.0.2
@@ -16,7 +16,7 @@ The code was developed for python 3.5 (tested on Linux and Windows)
 - tqdm>=4.11.2
 - matplotlib>=2.0.0
 
-You can install all the modules using `pip install _module_`.
+You can install all the modules using `pip install <module>`.
 
 ## Steps to follow:
 
