@@ -16,7 +16,7 @@ The code was developed for python 3.5 (tested on Linux and Windows)
 - tqdm>=4.11.2
 - matplotlib>=2.0.0
 
-You can install all the modules using 'pip install <module>'
+You can install all the modules using `pip install _module_`.
 
 ## Steps to follow:
 
