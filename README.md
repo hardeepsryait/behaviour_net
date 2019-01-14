@@ -33,14 +33,14 @@ You can install all the modules using `pip install <module>`.
 ## Steps to follow:
 
 1. Download the datasets in '/test/Reach/' and '/train/Reach/' folder respectively into a data folder in your local directory. 
-	Put the `data_file.csv` file in the data folder. This file will reference all the files (format must be kept same).
+	Put the `data_file.csv` file in the data folder. This file will reference all the files (format must be kept same).The fields of this file is  train/test dataset, name of classification classes, file name, total no. of frames, expert score.
 	
 2. To extract the features from the images using the CNN, run `extract_features.py`. 
 	These features will get stored in folder '/data/sequences/'.
 
 3. Train the RNN model with `train_reg.py`. You can change the training options (e.g. model) by editting this file.
 
-The models are defined in `models.py`. The trained model will get stored in folder '/data/checkpoints/'
+The models are defined in `models.py`. The trained model will get stored in folder '/data/checkpoints/'. If you want to use the pre-trained model, it can be downloaded form http://people.uleth.ca/~luczak/BehavNet/g04-features.hdf5 and copied in '/data/checkpoints/'.
 
 4. To validate the trained model, run `validate.py` on the test set. You can edit this file to validate different trained models.
 
