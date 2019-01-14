@@ -1,4 +1,4 @@
-# Behavior_net 
+﻿# Behavior_net 
 
 Artificial neural network to predict motor deficits in video recordings of rodents.
 
@@ -21,7 +21,7 @@ This code has been used to produce the results in the preprint: [Ryait et al, 20
 ## Requirements
 The code was developed for python 3.5 (tested on Linux and Windows) with the following modules:
 
-- tensorflow ???
+- Tensorflow
 - Keras>=2.0.2
 - numpy>=1.12.1
 - pandas>=0.19.2
