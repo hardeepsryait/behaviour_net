@@ -15,7 +15,7 @@ def train(data_type, seq_length, model, saved_model=None,
           load_to_memory=False):
     # Set variables.
     nb_epoch = 1000
-    batch_size = 16
+    batch_size = 8
     seq_length= 125
 
     # Helper: Save the model.
