@@ -44,6 +44,6 @@ You can install all the modules using `pip install <module>`.
 
 
 ## Disclaimer
-The network and methology presented here has been adapted from [https://github.com/harvitronix/five-video-classification-methods].  
+The network and methology presented here has been adapted from https://github.com/harvitronix/five-video-classification-methods.  
 
 See the accompanying blog post for full details: https://blog.coast.ai/five-video-classification-methods-implemented-in-keras-and-tensorflow-99cad29cc0b5 
