@@ -7,16 +7,13 @@ Artificial neural network to predict motor deficits in video recordings of roden
 Behaviour provides important insights into neuronal processes. For example, analysis of reaching movements can give a 
 reliable indication of neurological disorders like stroke, Parkinson disease, or Huntington disease. However, analyses 
 of fine movements are notoriously difficult and require a trained person. Here we show that a deep neuronal network 
-scored reaching behavioural impairments in stroke animals with humanan expert accuracy. Our trained nNetwork uncovered 
+scored reaching behavioural impairments in stroke animals with humanan expert accuracy. Our trained network uncovered 
 new movement alterations related to stroke, which had higher predictive power of stroke volume than human expert scores. 
 The same network was also trained to successfully score movements in a variety of other behavioural tasks and in human 
 patients with Parkinson’s disease. Thus, this network could be used for reproducible scoring of complex behaviours, and 
 knowledge extraction from a trained network can be used to design more sensitive behavioural indices to detect and 
 monitor neurological disorders. 
 
-
-
-This code has been used to produce the results in the preprint: [Ryait et al, 2019](https://www.biorxiv.org/)
 
 ## Requirements
 The code was developed for python 3.5 (tested on Linux and Windows) with the following modules:
