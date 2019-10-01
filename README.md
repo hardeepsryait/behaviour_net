@@ -32,7 +32,7 @@ You can install all the modules using `pip install <module>`.
 
 Instructions for running the pre-trained demo:
 1.	Download the repository in your local drive and unzip it.
-
+![alt text](https://github.com/hardeepsryait/behaviour_net/edit/master/images/img.png)
 Figure 1. Download the repository and unzip it into a local folder.
 2.	Unzip the data.zip file (Figure 1). This folder  contains sample data for training and testing the model in the corresponding ‘data/train/Reach/’ and ‘data/test/Reach/’ folders. Due to the space limitation on of GitHub, we only uploaded test files into ‘data/test/Reach/’ for this demo. This folder contains sample AVI files along with their frames in JPEG format for demonstration purposes. If ones wants to train the network, the training data should be copied to the corresponding folder (see To Run the model on your own data).
 3.	To train and test the model, the location of the data files are referenced in the ‘data/data_file.csv’ file.  
