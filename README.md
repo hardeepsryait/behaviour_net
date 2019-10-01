@@ -30,7 +30,7 @@ You can install all the modules using `pip install <module>`.
 ## Steps to follow:
 
 
-#Instructions for running the pre-trained demo:
+Instructions for running the pre-trained demo:
 1.	Download the repository in your local drive and unzip it.
  
 Figure 1. Download the repository and unzip it into a local folder.
@@ -48,7 +48,7 @@ Figure 3. Feature extraction using a CNN. For this demo, the features are alread
 6.	To validate the trained model, run validate.py. 
 
 
-#To run the model on your own data
+To run the model on your own data
 1.	Download the repository to your local drive and unzip it.
 2.	Create a folder called ‘data/train/Task’ and another one called ‘data/test/Task’ and place your training and test sets (videos) in the folders respectively for the Task you want to classify. 
 Next, you need to slice the videos into frames. To slice video files into frames in JPEG format you can use  extract_files.py. 
