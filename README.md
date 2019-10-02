@@ -30,25 +30,29 @@ You can install all the modules using `pip install <module>`.
 ## Instructions for running the pre-trained demo:
 1.	Download the repository in your local drive and unzip it.
 
-![Figure1](https://github.com/hardeepsryait/behaviour_net/blob/master/img/Fig1.png "Figure1")
+![Figure1](https://github.com/hardeepsryait/behaviour_net/blob/master/img/Fig1.png "Figure1. Download the repository and unzip it into a local folder.")
 
-Figure 1. Download the repository and unzip it into a local folder.
+<em> Figure 1. Download the repository and unzip it into a local folder. </em>
 
 2.	Unzip the data.zip file (Figure 1). This folder  contains sample data for training and testing the model in the corresponding ‘data/train/Reach/’ and ‘data/test/Reach/’ folders. Due to the space limitation on of GitHub, we only uploaded test files into ‘data/test/Reach/’ for this demo. This folder contains sample AVI files along with their frames in JPEG format for demonstration purposes. If ones wants to train the network, the training data should be copied to the corresponding folder (see To Run the model on your own data).
 
 3.	To train and test the model, the location of the data files are referenced in the ‘data/data_file.csv’ file.  
+
+<p align="center">
  
 ![Figure2](https://github.com/hardeepsryait/behaviour_net/blob/master/img/Fig2.png "Figure 2. All the data files are referenced in data_file.csv. The fields in this file describe the location and parameters used to train and test the model.") 
 
-Figure 2. All the data files are referenced in data_file.csv. The fields in this file describe the location and parameters used to train and test the model.
+</p>
+
+<em>Figure 2. All the data files are referenced in data_file.csv. The fields in this file describe the location and parameters used to train and test the model.</em>
 
 The structure of this file is as follows: column A denotes the type of data (e.g. training or test), column B describes task (e.g. reaching), column C is the file name, column D is the number of frames of each AVI file. Finally, column E contains the Expert Score assigned to the corresponding dataset which is used as the ground truth (target output). 
 
 4.	The next step is to extract the features using the CNN. For this demo, these files are already included in the folder ‘data/sequences/’. 
 
-![Figure3](https://github.com/hardeepsryait/behaviour_net/blob/master/img/Fig3.png "Figure 3") 
+![Figure3](https://github.com/hardeepsryait/behaviour_net/blob/master/img/Fig3.png "Figure3. Feature extraction using a CNN. For this demo, the features are already located in the ‘data/sequences’ folder.") 
 
-Figure 3. Feature extraction using a CNN. For this demo, the features are already located in the ‘data/sequences’ folder.  
+<em>Figure 3. Feature extraction using a CNN. For this demo, the features are already located in the ‘data/sequences’ folder. </em>
 
 5.	The next step is to train the model. For this demo, you can download the pre-trained model weights from http://people.uleth.ca/~luczak/BehavNet/g04-features.hdf5 and place them in the '/data/checkpoints/' folder.
 
@@ -62,9 +66,9 @@ Figure 3. Feature extraction using a CNN. For this demo, the features are alread
 2.	Create a folder called ‘data/train/Task’ and another one called ‘data/test/Task’ and place your training and test sets (videos) in the folders respectively for the Task you want to classify. 
 Next, you need to slice the videos into frames. To slice video files into frames in JPEG format you can use  extract_files.py. 
 
-![Figure4](https://github.com/hardeepsryait/behaviour_net/blob/master/img/Fig4.png "Figure 4")
+![Figure4](https://github.com/hardeepsryait/behaviour_net/blob/master/img/Fig4.png "Figure4. Slice videos into frames. You can use 'extract_files.py' to slice videos into multiple frames.")
 
-Figure 4. Slice videos into frames. You can use 'extract_files.py' to slice videos into multiple frames.
+<em>Figure 4. Slice videos into frames. You can use 'extract_files.py' to slice videos into multiple frames.</em>
 
 3.	The next step is to extract the features from the training images using the CNN. Run extract_features.py. Set ‘seq_length’ and ‘paths’ parameters according to your data (Figure 3). Once you run this python script, the features will be stored in the folder '/data/sequences/'.
 
