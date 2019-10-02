@@ -56,7 +56,7 @@ The structure of this file is as follows: column A denotes the type of data (e.g
 
 5.	The next step is to train the model. For this demo, you can download the pre-trained model weights from http://people.uleth.ca/~luczak/BehavNet/g04-features.hdf5 and place them in the '/data/checkpoints/' folder.
 
-6.	To validate the trained model, run validate.py. 
+6.	To validate the trained model, run <code>validate.py</code>. 
 
 
 ## Instructions to run the model on your own data
@@ -64,19 +64,19 @@ The structure of this file is as follows: column A denotes the type of data (e.g
 1.	Download the repository to your local drive and unzip it.
 
 2.	Create a folder called ‘data/train/Task’ and another one called ‘data/test/Task’ and place your training and test sets (videos) in the folders respectively for the Task you want to classify. 
-Next, you need to slice the videos into frames. To slice video files into frames in JPEG format you can use  extract_files.py. 
+Next, you need to slice the videos into frames. To slice video files into frames in JPEG format you can use  <code>extract_files.py</code>. 
 
 ![Figure4](https://github.com/hardeepsryait/behaviour_net/blob/master/img/Fig4.png "Figure4. Slice videos into frames. You can use 'extract_files.py' to slice videos into multiple frames.")
 
-<em>Figure 4. Slice videos into frames. You can use 'extract_files.py' to slice videos into multiple frames.</em>
+<em>Figure 4. Slice videos into frames. You can use <code>extract_files.py</code> to slice videos into multiple frames.</em>
 
-3.	The next step is to extract the features from the training images using the CNN. Run extract_features.py. Set ‘seq_length’ and ‘paths’ parameters according to your data (Figure 3). Once you run this python script, the features will be stored in the folder '/data/sequences/'.
+3.	The next step is to extract the features from the training images using the CNN. Run <code>extract_features.py</code>. Set ‘seq_length’ and ‘paths’ parameters according to your data (Figure 3). Once you run this python script, the features will be stored in the folder '/data/sequences/'.
 
-4.	Train the model by running train_reg.py. You need to modify this file to select different training options (e.g. nb_epoch, batch_size, seq_length).
+4.	Train the model by running <code>train_reg.py</code>. You need to modify this file to select different training options (e.g. nb_epoch, batch_size, seq_length).
 
-5.	To modify the models, you need to edit models.py. The trained model will get stored in folder '/data/checkpoints/'.
+5.	To modify the models, you need to edit <code>models.py</code>. The trained model will get stored in folder '/data/checkpoints/'.
 
-6.	Finally, to validate the trained model run validate.py
+6.	Finally, to validate the trained model run <code>validate.py</code>
 
 
 ## Disclaimer
