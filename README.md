@@ -81,10 +81,6 @@ Next, you need to slice the videos into frames. To slice video files into frames
 6.	Finally, to validate the trained model run <code>validate.py</code>
 
 
-## Disclaimer
-The network and methology presented here has been adapted from https://github.com/harvitronix/five-video-classification-methods.  
-=======
-
 This code has been used to produce the results in the preprint: [Ryait et al, 2019](https://www.biorxiv.org/)
 
 ## Requirements
